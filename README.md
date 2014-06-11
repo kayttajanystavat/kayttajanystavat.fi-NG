@@ -20,10 +20,17 @@ Run:
 
 	git clone git@github.com:kayttajanystavat/kayttajanystavat.fi-NG.git
 	cd kayttajanystavat.fi-NG
-	drush site-install minimal --db-url=sqlite://sites/default/DEVELOPMENT.sqlite
+	chmod u+w sites/default/
+	mkdir sites/default/db/
+	chmod ug+w sites/default/db
+	touch sites/default/db/DEVELOPMENT.sqlite
+	chmod ug+w sites/default/db/DEVELOPMENT.sqlite
+	drush site-install minimal --db-url=sqlite://sites/default/db/DEVELOPMENT.sqlite # answer yes
 	drush runserver
 
-Log in to the site at the address reported by `drush runserver`, and enable all modules in the group KAY. Installation is complete and you can start developing :)
+Log in to the site at the address reported by `drush runserver` using the credentials reported by the install. Enable all modules in the group KaY. Then go to Administration > Structure > Features and revert the `feature_basic_structure` feature (click "overridden", check all checkboxes on the page and click "revert components"). Installation is complete and you can start developing :)
+
+Make sure to revert any features after you git pull, so other developer's changes come through.
 
 ## More complex setup (WAMP/MAMP/LAMP/XAMPP etc.)
 
