@@ -1,5 +1,7 @@
 # Introduction
 
+This is the future website of Käyttäjän Ystävät.
+
 # Installation
 
 ## Simple setup (PHP + SQLite)
