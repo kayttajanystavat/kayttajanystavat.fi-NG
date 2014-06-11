@@ -1,6 +1,6 @@
 name = feature_basic_structure
 core = 7.x
-package = Features
+package = KaY
 dependencies[] = ctools
 dependencies[] = dblog
 dependencies[] = features

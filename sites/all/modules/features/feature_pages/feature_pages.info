@@ -1,6 +1,6 @@
 name = feature_pages
 core = 7.x
-package = Features
+package = KaY
 dependencies[] = ctools
 dependencies[] = feature_basic_structure
 dependencies[] = features
