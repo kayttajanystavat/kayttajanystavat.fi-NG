@@ -2,13 +2,15 @@
 
 This is the future website of Käyttäjän Ystävät.
 
+# After pull
+
+Go to http://<host>/admin/structure/features/ to check that all the features are in the default state. If they are in an overridden state, revert the feature. Without this, other developer's changes to the features will not come through.
+
 # Installation
 
 ## Simple setup (PHP + SQLite)
 
 ### Prerequisites
-
-(this is how it's supposed to go, haven't tested yet)
 
 - Git
 - PHP 5.4 or later
@@ -34,7 +36,9 @@ Make sure to revert any features after you git pull, so other developer's change
 
 ## More complex setup (WAMP/MAMP/LAMP/XAMPP etc.)
 
-- Install Apache, MySQL and PHP
+This is suitable if you already have a *AMP-stack installed and or have an older PHP version and don't want to update it.
+
+- Install and setup Git, Apache, MySQL and PHP if you haven't already
 - Clone the repository under Apache's document root
 - Create a database for the site in MySQL
 - Navigate to the repository's top-level directory in Apache using your browser
