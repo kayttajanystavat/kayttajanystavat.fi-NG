@@ -25,7 +25,7 @@ function feature_basic_structure_strongarm() {
     'domain' => '',
     'prefix' => 'fi',
     'weight' => '0',
-    'javascript' => 'u73HIgtd83DknrC9LMKwyWKqjZdXAVHuDwBgDhPXuyw',
+    'javascript' => 'sS_UO1jzUaQBJqSizGmiqzmGwNcLKRV0Nb5VvrUOsCU',
   );
   $export['language_default'] = $strongarm;
 
