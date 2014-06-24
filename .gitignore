@@ -8,3 +8,4 @@ sites/*/private
 # Ignore dev database
 sites/default/DEVELOPMENT.sqlite
 
+.DS_Store
