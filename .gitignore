@@ -7,5 +7,11 @@ sites/*/private
 
 # Ignore dev database
 sites/default/DEVELOPMENT.sqlite
+sites/default/db/
+
 
 .DS_Store
+
+.idea
+*.iml
+
