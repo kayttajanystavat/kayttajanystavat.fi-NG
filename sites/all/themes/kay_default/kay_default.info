@@ -1,0 +1,7 @@
+name = Käyttäjän Ystävät
+description = Default theme for Käyttäjän Ystävät website
+version = VERSION
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = layout.css
