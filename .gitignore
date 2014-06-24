@@ -8,3 +8,5 @@ sites/*/private
 # Ignore dev database
 sites/default/DEVELOPMENT.sqlite
 
+.idea
+*.iml
