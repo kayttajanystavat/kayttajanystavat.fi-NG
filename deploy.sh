@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo Deploying...
 git pull
 drush updatedb -y
