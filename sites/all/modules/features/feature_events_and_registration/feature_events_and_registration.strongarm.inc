@@ -213,7 +213,7 @@ function feature_events_and_registration_strongarm() {
 Tarvittaessa voit perua ilmoittautumisesi täällä: [node-registration:cancel-url]
 
 Terveisin,
-Käyttäjän Ystävät ry:n hallitus',
+Käyttäjän Ystävät ry',
     'change_mail_for_waiting_list_registree' => 1,
     'mail_for_waiting_list_registree_subject' => 'Olet jonossa tapahtumaan [node:title]',
     'mail_for_waiting_list_registree_body' => 'Olet ilmoittautunut tapahtumaan [node:title], mutta olet jonotuslistalla. Sinulle ilmoitetaan sähköpostitse, jos mahdut mukaan.

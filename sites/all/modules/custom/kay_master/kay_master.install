@@ -1,0 +1,10 @@
+<?php
+
+function kay_master_update_7002() {
+  module_enable(array(
+    'views_data_export',
+    'feature_basic_structure',
+    'feature_events_and_registration',
+    'feature_pages'
+  ));
+}
