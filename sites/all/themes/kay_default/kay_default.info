@@ -4,7 +4,8 @@ version = VERSION
 core = 7.x
 engine = phptemplate
 
-regions[navigation] = Navigation
 regions[content] = Content
+regions[footer] = Footer
+
 
 stylesheets[all][] = layout.css
