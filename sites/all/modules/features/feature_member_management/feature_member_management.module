@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Feature Member Management feature.
+ */
+
+include_once 'feature_member_management.features.inc';
