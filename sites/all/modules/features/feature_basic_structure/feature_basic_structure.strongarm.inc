@@ -67,9 +67,19 @@ function feature_basic_structure_strongarm() {
     'domain' => '',
     'prefix' => 'fi',
     'weight' => '0',
-    'javascript' => 'sS_UO1jzUaQBJqSizGmiqzmGwNcLKRV0Nb5VvrUOsCU',
+    'javascript' => '',
   );
   $export['language_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'path_alias_whitelist';
+  $strongarm->value = array(
+    'node' => TRUE,
+    'user' => TRUE,
+  );
+  $export['path_alias_whitelist'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -130,16 +140,16 @@ function feature_basic_structure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_punctuation_backtick';
+  $strongarm->name = 'pathauto_punctuation_back_slash';
   $strongarm->value = '0';
-  $export['pathauto_punctuation_backtick'] = $strongarm;
+  $export['pathauto_punctuation_back_slash'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_punctuation_back_slash';
+  $strongarm->name = 'pathauto_punctuation_backtick';
   $strongarm->value = '0';
-  $export['pathauto_punctuation_back_slash'] = $strongarm;
+  $export['pathauto_punctuation_backtick'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -368,15 +378,6 @@ function feature_basic_structure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'path_alias_whitelist';
-  $strongarm->value = array(
-    'node' => TRUE,
-  );
-  $export['path_alias_whitelist'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'site_default_country';
   $strongarm->value = 'FI';
   $export['site_default_country'] = $strongarm;
@@ -392,7 +393,7 @@ function feature_basic_structure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'bartik';
+  $strongarm->value = 'kay_default';
   $export['theme_default'] = $strongarm;
 
   return $export;
