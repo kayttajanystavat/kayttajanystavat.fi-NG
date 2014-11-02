@@ -15,6 +15,8 @@
  * instances due to a positioning bug.
  */
 
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
 #content,
 #sidebar-first,
 #sidebar-second {
@@ -26,6 +28,13 @@
 #content {
   width: 100%;
 }
+
+body {
+  font-family: Lato;
+}
+
+
+
 body.sidebar-first #content {
   width: 80%;
   left: 20%; /* LTR */
@@ -54,4 +63,47 @@ body.two-sidebars #sidebar-first {
 
 .section {
   margin: 10px;
+
 }
+
+#navigation {
+  background-color: #2e2f30;
+  opacity: 85%;
+}
+
+#navigation a {
+ color: #fff; text-decoration: none;
+}
+
+#main {
+  text-align: center;
+}
+
+
+#main .block {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+.front .block:nth-child(odd) {
+background-color: #d0cfd1;
+
+
+}
+
+.front .block:nth-child(even) {
+background-color: #f2f0f4;
+}
+
+#main p, h2 {
+  margin-right: 10%;
+  margin-left: 10%;
+  color: #333333;
+}
+
+#main a {
+  color: #3399cc;
+}
+
+
