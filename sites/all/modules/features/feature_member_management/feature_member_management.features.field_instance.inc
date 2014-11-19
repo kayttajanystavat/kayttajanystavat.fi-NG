@@ -313,7 +313,7 @@ function feature_member_management_field_default_field_instances() {
     'entity_type' => 'user',
     'field_name' => 'field_phone_number',
     'label' => 'Puhelinnumero',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => 1,
