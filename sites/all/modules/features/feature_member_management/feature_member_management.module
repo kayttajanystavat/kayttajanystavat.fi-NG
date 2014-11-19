@@ -5,3 +5,9 @@
  */
 
 include_once 'feature_member_management.features.inc';
+
+function feature_member_management_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+	$form['account']['mail']['#description'] = t('Your email address will be added on our low-traffic mailing list.');
+	$form['actions']['submit']['#value'] = t('Apply for membership');
+	drupal_set_title(t('Become a member'));
+}
