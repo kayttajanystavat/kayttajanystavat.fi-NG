@@ -30,7 +30,7 @@
 }
 
 body {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
 }
 
 
@@ -68,11 +68,49 @@ body.two-sidebars #sidebar-first {
 
 #navigation {
   background-color: #2e2f30;
-  opacity: 85%;
+  opacity: 0.85;
+  padding-left: 2em;
 }
 
 #navigation a {
  color: #fff; text-decoration: none;
+}
+
+#navigation h2 {
+  display: none;
+}
+
+#logo {
+  background-image: url("kay-logo.png");
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 3em;
+}
+
+#main-menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#main-menu li {
+  display: inline-block;
+}
+
+#main-menu li a {
+  display: block;
+  padding: 1em 0.6em;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#main-menu li a:hover {
+  color: #47bbf5;
 }
 
 #main {

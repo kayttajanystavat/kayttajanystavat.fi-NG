@@ -74,11 +74,9 @@
 ?>
 
 
-    <div id="header"><div class="section clearfix">
+    <div id="header">
 
 
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-        </a>
 
         <div id="site_name"><?php print $site_name; ?></div>
 
@@ -89,15 +87,17 @@
           <?php endif; ?>
 
 
- 
 
-    </div></div> <!-- /.section, /#header -->
+
+    </div> <!-- /#header -->
 
     <?php if ($main_menu): ?>
-      <div id="navigation"><div class="section">
+      <div id="navigation">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+        </a>
         <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
     
-      </div></div> <!-- /.section, /#navigation -->
+      </div> <!-- /#navigation -->
     <?php endif; ?>
 
 
