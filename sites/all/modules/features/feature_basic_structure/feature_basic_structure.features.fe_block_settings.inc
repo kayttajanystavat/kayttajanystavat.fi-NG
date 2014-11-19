@@ -21,12 +21,6 @@ function feature_basic_structure_default_fe_block_settings() {
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
       'kay_default' => array(
         'region' => 'content',
         'status' => 1,
@@ -47,12 +41,6 @@ function feature_basic_structure_default_fe_block_settings() {
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
       'kay_default' => array(
         'region' => 'content',
         'status' => 1,
@@ -73,12 +61,6 @@ function feature_basic_structure_default_fe_block_settings() {
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
       'kay_default' => array(
         'region' => 'content',
         'status' => 1,
@@ -88,6 +70,46 @@ function feature_basic_structure_default_fe_block_settings() {
     ),
     'title' => 'Yhdistämme ihmisiä monialaisesti',
     'visibility' => 1,
+  );
+
+  $export['block-kay_footer_about'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'machine_name' => 'kay_footer_about',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'kay_default' => array(
+        'region' => 'footer',
+        'status' => 1,
+        'theme' => 'kay_default',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'Mikä Käyttäjän ystävät?',
+    'visibility' => 0,
+  );
+
+  $export['block-kay_footer_contact'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'machine_name' => 'kay_footer_contact',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'kay_default' => array(
+        'region' => 'footer',
+        'status' => 1,
+        'theme' => 'kay_default',
+        'weight' => 1,
+      ),
+    ),
+    'title' => 'Yhteystiedot',
+    'visibility' => 0,
   );
 
   return $export;

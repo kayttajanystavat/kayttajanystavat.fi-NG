@@ -43,5 +43,29 @@ Tavoitteemme on tuoda yhteen monipuolisesti alasta kiinnostuneita ihmisiä.
 
   $export['introtext_goals'] = $fe_block_boxes;
 
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'Footer: Mikä Käyttäjän ystävät?';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'kay_footer_about';
+  $fe_block_boxes->body = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vitae arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus.';
+
+  $export['kay_footer_about'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'KäY Footer: Yhteystiedot';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'kay_footer_contact';
+  $fe_block_boxes->body = '<p>
+hallitus@kayttajanystavat.fi
+</p>
+<p>
+PL 69, 02151 Espoo
+</p>
+<p>
+Y-tunnus 1741700-5 (YTJ)
+</p>';
+
+  $export['kay_footer_contact'] = $fe_block_boxes;
+
   return $export;
 }
