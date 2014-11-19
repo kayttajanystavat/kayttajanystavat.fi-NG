@@ -122,6 +122,37 @@ function feature_events_and_registration_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-event-field_color'
+  $field_instances['node-event-field_color'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_color',
+    'label' => 'Väri',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-event-field_contact'
   $field_instances['node-event-field_contact'] = array(
     'bundle' => 'event',
@@ -200,6 +231,50 @@ function feature_events_and_registration_field_default_field_instances() {
       ),
       'type' => 'date_popup',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-event-field_image'
+  $field_instances['node-event-field_image'] = array(
+    'bundle' => 'event',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_image',
+    'label' => 'Kuva',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'event-images',
+      'file_extensions' => 'png jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '600x500',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 9,
     ),
   );
 
@@ -439,6 +514,7 @@ function feature_events_and_registration_field_default_field_instances() {
   t('Erityisruokavaliot');
   t('Ilmoittautumisen ajankohta');
   t('Kertomus');
+  t('Kuva');
   t('Maksimimäärä. Loput joutuvat jonoon.');
   t('Milloin tapahtuma pidetään');
   t('Nimi');
@@ -450,6 +526,7 @@ function feature_events_and_registration_field_default_field_instances() {
   t('Tapahtuman kuvaus');
   t('Tämä koskee vain aikaa. Ilmoittautumisen voi laittaa päälle tai pois alempaa sivulta. Jos kentän jättää tyhjäksi, ilmoittautuminen on auki kunnes se erikseen suljetaan.');
   t('Täytetään tapahtuman jälkeen, jos jaksetaan.');
+  t('Väri');
   t('Yhteyshenkilön yhteystiedot');
 
   return $field_instances;
