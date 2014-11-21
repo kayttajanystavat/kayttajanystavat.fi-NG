@@ -74,32 +74,25 @@
 ?>
 
 
-    <div id="header">
-
-
-
-        <div id="site_name"><?php print $site_name; ?></div>
-
-
-
-          <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-
-
-
-
-    </div> <!-- /#header -->
 
     <?php if ($main_menu): ?>
       <div id="navigation">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
         </a>
         <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
-    
+
       </div> <!-- /#navigation -->
     <?php endif; ?>
 
+    <div id="header">
+        <?php if ($title && !$is_front): ?>
+            <h1 class="title" id="page-title"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php if ($is_front && $site_slogan): ?>
+            <h1 class="site-slogan" id="page-title"><?php print $site_slogan; ?></h1>
+        <?php endif; ?>
+
+    </div> <!-- /#header -->
 
     <?php print $messages; ?>
 
@@ -108,7 +101,6 @@
 
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>
