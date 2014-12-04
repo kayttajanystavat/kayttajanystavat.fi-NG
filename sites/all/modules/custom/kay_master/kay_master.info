@@ -2,3 +2,7 @@ name = Feature Events and Registration
 core = 7.x
 package = KaY
 
+dependencies[] = feature_basic_structure
+dependencies[] = feature_events_and_registration
+dependencies[] = feature_pages
+dependencies[] = feature_board_member_list
