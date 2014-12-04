@@ -262,7 +262,7 @@ function feature_events_and_registration_field_default_field_instances() {
       'file_extensions' => 'png jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '600x500',
+      'min_resolution' => '1000x800',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
