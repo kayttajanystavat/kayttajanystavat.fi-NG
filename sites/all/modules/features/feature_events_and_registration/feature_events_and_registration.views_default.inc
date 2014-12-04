@@ -295,6 +295,9 @@ function feature_events_and_registration_views_default_views() {
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Tapahtumat';
   $handler->display->display_options['menu']['name'] = 'main-menu';
+
+  /* Display: Lohko */
+  $handler = $view->new_display('block', 'Lohko', 'block_1');
   $translatables['kay_events_upcoming'] = array(
     t('Master'),
     t('Tapahtumat'),
@@ -305,6 +308,7 @@ function feature_events_and_registration_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Page'),
+    t('Lohko'),
   );
   $export['kay_events_upcoming'] = $view;
 
