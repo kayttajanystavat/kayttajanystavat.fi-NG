@@ -112,5 +112,25 @@ function feature_basic_structure_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['block-kay_rules'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'machine_name' => 'kay_rules',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => 'yhdistys',
+    'roles' => array(),
+    'themes' => array(
+      'kay_default' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'kay_default',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'Säännöt',
+    'visibility' => 1,
+  );
+
   return $export;
 }

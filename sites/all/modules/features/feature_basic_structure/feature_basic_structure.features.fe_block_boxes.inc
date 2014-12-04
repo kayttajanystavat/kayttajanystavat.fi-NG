@@ -67,5 +67,13 @@ Y-tunnus 1741700-5 (YTJ)
 
   $export['kay_footer_contact'] = $fe_block_boxes;
 
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'KäY Yhdistys: Säännöt';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'kay_rules';
+  $fe_block_boxes->body = 'TODO Säännöt tähän';
+
+  $export['kay_rules'] = $fe_block_boxes;
+
   return $export;
 }
