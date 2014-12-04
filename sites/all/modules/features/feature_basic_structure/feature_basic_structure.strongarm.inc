@@ -67,19 +67,9 @@ function feature_basic_structure_strongarm() {
     'domain' => '',
     'prefix' => 'fi',
     'weight' => '0',
-    'javascript' => '',
+    'javascript' => '5ZBWGgE1yxWR2GhFVZBDBgLDqyjRw1Xz2RfICXNHz1Y',
   );
   $export['language_default'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'path_alias_whitelist';
-  $strongarm->value = array(
-    'node' => TRUE,
-    'user' => TRUE,
-  );
-  $export['path_alias_whitelist'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -140,16 +130,16 @@ function feature_basic_structure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_punctuation_back_slash';
+  $strongarm->name = 'pathauto_punctuation_backtick';
   $strongarm->value = '0';
-  $export['pathauto_punctuation_back_slash'] = $strongarm;
+  $export['pathauto_punctuation_backtick'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_punctuation_backtick';
+  $strongarm->name = 'pathauto_punctuation_back_slash';
   $strongarm->value = '0';
-  $export['pathauto_punctuation_backtick'] = $strongarm;
+  $export['pathauto_punctuation_back_slash'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -374,6 +364,16 @@ function feature_basic_structure_strongarm() {
   $strongarm->name = 'pathauto_user_pattern';
   $strongarm->value = 'users/[user:name]';
   $export['pathauto_user_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'path_alias_whitelist';
+  $strongarm->value = array(
+    'node' => TRUE,
+    'user' => TRUE,
+  );
+  $export['path_alias_whitelist'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

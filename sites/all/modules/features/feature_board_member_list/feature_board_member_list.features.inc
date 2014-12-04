@@ -60,7 +60,7 @@ function feature_board_member_list_node_info() {
     'board_member' => array(
       'name' => t('Hallituksen jäsen'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Näytetään julkisesti listana hallituksen jäsenistä'),
       'has_title' => '1',
       'title_label' => t('Nimi'),
       'help' => '',
