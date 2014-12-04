@@ -1,0 +1,5 @@
+<?php
+
+function feature_events_and_registration_update_7001() {
+  module_enable(array('image'));
+}
