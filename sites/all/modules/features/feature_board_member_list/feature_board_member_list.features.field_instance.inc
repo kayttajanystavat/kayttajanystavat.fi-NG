@@ -123,7 +123,7 @@ function feature_board_member_list_field_default_field_instances() {
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '1200x1200',
+      'max_resolution' => '',
       'min_resolution' => '400x400',
       'title_field' => 0,
       'user_register_form' => FALSE,
