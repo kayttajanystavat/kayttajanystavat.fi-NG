@@ -226,6 +226,7 @@ background-color: #f2f0f4;
 
 .form-item {
   width: 60%;
+  position: relative;
 }
 
 #user-register-form input[type=text],
@@ -243,6 +244,31 @@ background-color: #f2f0f4;
 
 #user-register-form .grippie {
   display: none;
+}
+
+#user-register-form input[type=radio] {
+  visibility: hidden;
+}
+
+#user-register-form input[type=radio]:before {
+  display: inline-block;
+  visibility: visible;
+  height: 20px;
+  content: ' ';
+  line-height: 20px;
+  text-align: center;
+  width: 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: absolute;
+  left: 8px;
+  top: 3px;
+}
+
+#user-register-form input[type=radio]:checked:before {
+  content: ' ';
+  background-color: #f0f0f0;
 }
 
 #edit-submit {
