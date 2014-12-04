@@ -44,8 +44,8 @@ function feature_events_and_registration_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 500,
-          'height' => 400,
+          'width' => 1000,
+          'height' => 800,
         ),
         'weight' => 1,
       ),
