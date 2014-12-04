@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Feature Board member list feature.
+ */
+
+include_once 'feature_board_member_list.features.inc';
