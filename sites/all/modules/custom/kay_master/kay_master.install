@@ -21,7 +21,7 @@ function kay_master_update_7004() {
   ));
 }
 
-function kay_master_update_7004() {
+function kay_master_update_7005() {
   module_enable(array(
     'feature_board_member_list'
   ));
