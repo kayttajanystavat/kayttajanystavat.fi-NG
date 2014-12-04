@@ -14,3 +14,9 @@ function kay_master_update_7003() {
     'context'
   ));
 }
+
+function kay_master_update_7004() {
+  module_enable(array(
+    'user_mailman_register'
+  ));
+}
