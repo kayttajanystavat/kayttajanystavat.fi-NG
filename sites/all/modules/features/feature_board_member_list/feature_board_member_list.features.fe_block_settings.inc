@@ -25,7 +25,7 @@ function feature_board_member_list_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'kay_default',
-        'weight' => 0,
+        'weight' => -4,
       ),
     ),
     'title' => '',

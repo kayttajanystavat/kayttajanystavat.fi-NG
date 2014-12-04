@@ -37,6 +37,12 @@ function feature_board_member_list_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
+  /* Toiminta jos tuloksia ei löydy: Yleinen: Suodattamaton teksti */
+  $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area_text_custom']['content'] = 'Tämän vuoden hallitusta ei ole vielä lisätty sivuille. Kannattaa muistutelle asiasta sähköpostitse, hallitus@kayttajanystavat.fi :)';
   /* Kenttä: Sisältö: Otsikko */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -81,6 +87,7 @@ function feature_board_member_list_views_default_views() {
     t('Lajittele'),
     t('Asc'),
     t('Desc'),
+    t('Tämän vuoden hallitusta ei ole vielä lisätty sivuille. Kannattaa muistutelle asiasta sähköpostitse, hallitus@kayttajanystavat.fi :)'),
     t('Block'),
   );
   $export['kay_board_current'] = $view;
