@@ -20,3 +20,9 @@ function kay_master_update_7004() {
     'user_mailman_register'
   ));
 }
+
+function kay_master_update_7004() {
+  module_enable(array(
+    'feature_board_member_list'
+  ));
+}
