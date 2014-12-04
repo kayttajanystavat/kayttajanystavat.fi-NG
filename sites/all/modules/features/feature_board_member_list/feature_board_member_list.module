@@ -5,3 +5,9 @@
  */
 
 include_once 'feature_board_member_list.features.inc';
+
+function feature_board_member_list_block_view_alter(&$data, $block) {
+  if($block->delta === 'kay_board_current-block') {
+  	$data['subject'] = $data['subject'] . date(' Y');
+  }
+}
