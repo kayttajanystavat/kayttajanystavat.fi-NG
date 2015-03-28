@@ -248,6 +248,10 @@ background-color: #f2f0f4;
   padding: 10px;
 }
 
+#user-register-form textarea {
+  width: 100%;
+}
+
 #user-register-form .grippie {
   display: none;
 }
@@ -286,6 +290,27 @@ background-color: #f2f0f4;
 
 #user-register-form .form-item {
   width: auto;
+}
+
+#edit-field-member-type-und {
+  text-align: left;
+}
+
+#edit-field-ayy-member .form-item {
+  text-align: left;
+}
+
+#edit-field-ayy-member label {
+  margin-left: 1em;
+}
+
+#edit-field-member-type-und label {
+  margin-left: 1em;
+}
+
+#edit-field-member-type .description {
+  margin-top: 1em;
+  text-align: left;
 }
 
 #edit-submit {
@@ -368,10 +393,13 @@ background-color: #f2f0f4;
 
   .block .content {
     font-size: 1em;
-    margin: 0 10%;
   }
 
-}
+  #edit-submit {
+    padding: 1em 1em;
+  }
+
+  }
 
 @media (min-width: 630px) {
 
@@ -389,32 +417,8 @@ background-color: #f2f0f4;
     margin-left: 56%
   }
 
-  #edit-field-member-type .form-item {
-  }
-
   #field-first-name-add-more-wrapper .form-item {
     margin-top: 0;
-  }
-
-  #edit-field-member-type-und label {
-    margin-left: 1em;
-  }
-
-  #edit-field-member-type .description {
-    margin-top: 1em;
-    text-align: left;
-  }
-
-  #edit-field-member-type-und {
-    text-align: left;
-  }
-
-  #edit-field-ayy-member .form-item {
-    text-align: left;
-  }
-
-  #edit-field-ayy-member label {
-    margin-left: 1em;
   }
 
   #edit-actions {
