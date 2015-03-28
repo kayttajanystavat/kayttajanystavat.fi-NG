@@ -211,6 +211,7 @@ background-color: #f2f0f4;
 
 #user-register-form {
   color: #f0f0f0;
+  position: relative;
 
 }
 
@@ -228,6 +229,10 @@ background-color: #f2f0f4;
 .form-item {
   width: 60%;
   position: relative;
+}
+
+#user-register-form .form-item .label {
+  cursor: pointer;
 }
 
 #user-register-form input[type=text],
@@ -251,7 +256,13 @@ background-color: #f2f0f4;
   visibility: hidden;
 }
 
-#user-register-form input[type=radio]:before {
+#user-register-form input[type=checkbox] {
+  visibility: hidden;
+}
+
+#user-register-form input[type=radio]:before,
+#user-register-form input[type=checkbox]:before {
+  cursor: pointer;
   display: inline-block;
   visibility: visible;
   height: 20px;
@@ -267,19 +278,29 @@ background-color: #f2f0f4;
   top: 3px;
 }
 
-#user-register-form input[type=radio]:checked:before {
+#user-register-form input[type=radio]:checked:before,
+#user-register-form input[type=checkbox]:checked:before {
   content: ' ';
   background-color: #f0f0f0;
+}
+
+#user-register-form .form-item {
+  width: auto;
 }
 
 #edit-submit {
   background-color: #53A8D3;
   border: 0;
+  border-bottom: 2px solid #3388B3;
   border-radius: 6px;
   font-size: 1em;
   padding: 1.6em 3em;
   color: #f0f0f0;
   cursor: pointer;
+}
+
+#edit-submit:hover {
+  background-color: #3388B3;
 }
 
 
@@ -350,4 +371,54 @@ background-color: #f2f0f4;
     margin: 0 10%;
   }
 
+}
+
+@media (min-width: 630px) {
+
+
+  #user-register-form .field-type-text,
+  #edit-account {
+    float: left;
+    clear: left;
+    width: 46%;
+  }
+
+  #edit-field-member-type,
+  #edit-field-ayy-member,
+  #edit-field-other-information {
+    margin-left: 56%
+  }
+
+  #edit-field-member-type .form-item {
+  }
+
+  #field-first-name-add-more-wrapper .form-item {
+    margin-top: 0;
+  }
+
+  #edit-field-member-type-und label {
+    margin-left: 1em;
+  }
+
+  #edit-field-member-type .description {
+    margin-top: 1em;
+    text-align: left;
+  }
+
+  #edit-field-member-type-und {
+    text-align: left;
+  }
+
+  #edit-field-ayy-member .form-item {
+    text-align: left;
+  }
+
+  #edit-field-ayy-member label {
+    margin-left: 1em;
+  }
+
+  #edit-actions {
+    clear: both;
+    padding-top: 3em;
+  }
 }
